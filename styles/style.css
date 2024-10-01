@@ -7,23 +7,23 @@
   justify-items: center;
   font-size: 18px;
   line-height: 24.3px;
+  font-weight: 400;
 }
 
 .header__menu {
   grid-area: menu;
-  justify-items: stretch;
 }
 
 .header__links-list {
   list-style: circle inside;
   display: flex;
   justify-content: centern;
- 
-  
+  line-height: 21px;
 }
 
 .header__links-list-item {
   margin-left: 13px;
+  letter-spacing: 1%;
 }
 
 .header__links-list-item_no-bullit {
@@ -33,11 +33,12 @@
 
 .header__links-list-item_no-bullit a {
   text-decoration: none;
+  letter-spacing: 0;
 }
 
 .header__logo {
-  display: block;
-  width: 145px;
+  display: flex;
+  width: 148px;
   height: 105px;
   grid-area: logo;
 }
@@ -45,5 +46,8 @@
 .address {
   grid-area: address;
   grid-column: 4 / -1;
+}
 
+.address a {
+  letter-spacing: 1%;
 }
