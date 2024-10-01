@@ -1,1 +1,34 @@
-/* место для вашего кода */
+.header {
+  margin: 92px 24px 96px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-areas: "menu logo . address";
+  height: 105px;
+  width: 1052px;
+}
+
+.header__menu {
+  grid-area: menu;
+  justify-items: stretch;
+}
+
+.header__links-list {
+  list-style: circle inside;
+  display: flex;
+  
+}
+
+.header__links-list-item {
+  font-size: 18px;
+}
+
+.header__logo {
+  display: block;
+  width: 148px;
+  height: 105px;
+  grid-area: logo;
+}
+
+.address {
+  grid-area: address;
+}
