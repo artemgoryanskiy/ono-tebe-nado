@@ -1,10 +1,12 @@
 .header {
   margin: 92px 24px 96px;
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
-  grid-template-areas: "menu logo . address";
-  height: 105px;
-  width: 1052px;
+  grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "menu logo . . address";
+  align-items: center;
+  justify-items: center;
+  font-size: 18px;
+  line-height: 24.3px;
 }
 
 .header__menu {
@@ -15,20 +17,33 @@
 .header__links-list {
   list-style: circle inside;
   display: flex;
+  justify-content: centern;
+ 
   
 }
 
 .header__links-list-item {
-  font-size: 18px;
+  margin-left: 13px;
+}
+
+.header__links-list-item_no-bullit {
+  list-style: none;
+  margin-left: 0;
+}
+
+.header__links-list-item_no-bullit a {
+  text-decoration: none;
 }
 
 .header__logo {
   display: block;
-  width: 148px;
+  width: 145px;
   height: 105px;
   grid-area: logo;
 }
 
 .address {
   grid-area: address;
+  grid-column: 4 / -1;
+
 }
