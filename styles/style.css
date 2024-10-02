@@ -256,3 +256,40 @@
 .about__column_right p:nth-of-type(1) {
   margin-bottom: 24px;
 }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 50px 88px;
+}
+
+.footer__address {
+  font-size: 18px;
+  line-height: 24.3px;
+}
+
+.footer__menu {
+  font-size: 18px;
+  text-align: center;
+  margin-left: 30px;
+}
+
+.footer__menu-list {
+  list-style-type: none;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
+}
+
+.footer__social-list {
+  list-style-type: none;
+  display: flex;
+  column-gap: 48px;
+}
+
+.footer__social-icon {
+  width: 48px;
+  height: 48px;
+}
+
