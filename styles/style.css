@@ -6,7 +6,6 @@
   align-items: center;
   justify-items: center;
   font-size: 18px;
-  line-height: 24.3px;
   font-weight: 400;
 }
 
@@ -17,7 +16,7 @@
 .header__links-list {
   list-style: circle inside;
   display: flex;
-  justify-content: centern;
+  justify-content: center;
   line-height: 21px;
 }
 
@@ -59,6 +58,8 @@
 
 .overlay {
   position: absolute;
+  top: 0;
+  left: 0;
   background-color: #000;
   opacity: 0.6;
   width: 100%;
@@ -67,13 +68,18 @@
 }
 
 .cover__title {
+  position: relative;
+  z-index: 2;
   font-size: 100px;
   font-weight: 700;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
   letter-spacing: 30px;
-  margin: 165px 50px 237px;
+  padding: 165px 50px 135px;
   display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* row-gap: 20px; */
 }
 
 .aligned-text {
@@ -84,9 +90,46 @@
 .aligned-text_center {
   display: block;
   text-align: center;
+  align-self: center;
+  margin-right: 20px;
 }
 
 .aligned-text_right {
   display: block;
   text-align: end;
+  margin-right: -20px;
+}
+
+.title__end, .title__start {
+  letter-spacing: 55px;
+}
+
+.cover__description {
+  display: flex;
+  justify-content: space-evenly;
+  row-gap: 79px;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  font-size: 15px;
+  color:rgb(255, 255, 255);
+  text-transform: uppercase;
+  padding-bottom: 62px;
+}
+
+.cover__description-text {
+  line-height: 28px;
+  word-spacing: 20px;
+  line-height: 28px;
+  font-weight: lighter;
+}
+
+.bet-button {
+  padding: 12px 31px;
+  font-size: 22px;
+  color:rgb(255, 255, 255);
+  text-transform: uppercase;
+  background: transparent;
+  border: 1px solid rgb(255, 255, 255);
+  cursor: pointer;
 }
