@@ -1,7 +1,7 @@
 .header {
   display: grid;
-  grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: "menu logo . . address";
+  grid-template-columns: 3fr 1fr 3fr;
+  grid-template-areas: "menu logo address";
   justify-items: center;
   align-items: center;
   margin: 92px 24px 96px;
@@ -19,7 +19,7 @@
   line-height: 22px;
   list-style: circle;
   padding-right: 13px;
-  padding-top: 2px;
+  padding-top: 4px;
 }
 
 .header__links-list-item {
@@ -66,11 +66,15 @@
 
 .address {
   grid-area: address;
-  grid-column: 4 / -1;
+  line-height: 24px;
+  padding-left: 122px;
+  padding-top: 2px;
 }
 
-.address a {
-  letter-spacing: 1%;
+
+.link {
+  text-decoration: none;
+  border-bottom: 1px solid black;
 }
 
 .cover {
