@@ -5,8 +5,8 @@
   justify-items: center;
   align-items: center;
   margin: 92px 24px 96px;
-  font-weight: 400;
   font-size: 18px;
+ 
 }
 
 .header__menu {
@@ -16,23 +16,45 @@
 .header__links-list {
   display: flex;
   justify-content: center;
-  line-height: 21px;
-  list-style: circle inside;
+  line-height: 22px;
+  list-style: circle;
+  padding-right: 13px;
+  padding-top: 2px;
 }
 
 .header__links-list-item {
-  margin-left: 13px;
+  margin-left: 30px;
   letter-spacing: 1%;
 }
+
+.header__links-list-item a  {
+  display: inline-block;
+  padding-left: 4px;
+  width: 100%;
+  text-decoration: none;
+  
+}
+
+.header__links-list-item a span {
+  border-bottom: 1px solid black;
+}
+
 
 .header__links-list-item_no-bullit {
   margin-left: 0;
   list-style: none;
+  line-height: 21px;
+
 }
 
 .header__links-list-item_no-bullit a {
   letter-spacing: 0;
   text-decoration: none;
+ 
+}
+
+.header__links-list-item_no-bullit a span {
+  border: none;
 }
 
 .header__logo {
