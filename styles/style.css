@@ -106,21 +106,21 @@
 }
 
 .aligned-text_center {
+  position: relative;
+  left: 287px;
   display: block;
-  align-self: center;
-  margin: 10px 30px 0 0;
-  text-align: center;
+  margin: 10px 0 0;
 }
 
 .aligned-text_right {
+  position: relative;
+  left: 30px;
   display: block;
-  margin: 0 -30px 0 0;
-  padding: 2px 0 0 0;
+  padding: 2px 0 0;
   text-align: end;
 }
 
-.title__end,
-.title__start {
+.title__letter {
   letter-spacing: 60px;
 }
 
@@ -130,7 +130,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 0 0 50px 0;
+  padding: 0 0 50px;
   color: rgb(255, 255, 255);
   font-size: 15px;
   text-transform: uppercase;
