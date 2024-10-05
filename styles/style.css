@@ -1,13 +1,3 @@
-* {
-  border: 1px solid red;
-
-}
-
-body {
-    overflow-x: hidden;
-}
-
-
 .header {
   display: grid;
   grid-template-columns: 3fr 1fr 3fr;
@@ -40,7 +30,7 @@ body {
   width: 100%;
   padding: 0 0 0 4px;
   text-decoration: none;
-   border-bottom: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 .header__links-list-item_no-bullit {
@@ -51,7 +41,6 @@ body {
 
 .header__links-list-item_no-bullit a {
   letter-spacing: 0;
-  text-decoration: none;
   border: none;
   
 }
@@ -71,9 +60,9 @@ body {
   font-style: normal;
 }
 
-.link {
-  border-bottom: 1px solid black;
+.address a {
   text-decoration: none;
+  border-bottom: 1px solid black;
 }
 
 .cover {
